@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/screens.rpy", line 303: keyword argument 'yalign' appears more than once in a vbox statement.
+    yalign 0.6
+          ^
+
+Ren'Py Version: Ren'Py 8.4.1.25072401
+Tue Nov 25 12:17:25 2025

@@ -1,0 +1,443 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While processing text tag {/i} in 'While processing text tag {/i} in "While processing text tag {/i} in \'{size= 42}{b}In collaboration with subject:{/b} Data Structures & Algorithm \\\\nInstructor: Rov Japheth G. Oracion{/size}{/i}\'.:".:'.:
+  File "game/script.rpy", line 42, in script
+    show text "{size= 42}{b}In collaboration with subject:{/b} Data Structures & Algorithm \nInstructor: Rov Japheth G. Oracion{/size}{/i}" at truecenter with dissolve
+  File "renpy/display/render.pyx", line 487, in renpy.display.render.render_screen
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/accelerator.pyx", line 1021, in renpy.display.accelerator.RenderTransform.render
+  File "renpy/display/accelerator.pyx", line 440, in renpy.display.accelerator.RenderTransform.render_child
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+Exception: '/i' closes a text tag that isn't open.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "game/script.rpy", line 42, in script
+    show text "{size= 42}{b}In collaboration with subject:{/b} Data Structures & Algorithm \nInstructor: Rov Japheth G. Oracion{/size}{/i}" at truecenter with dissolve
+  File "game/script.rpy", line 42, in script
+    show text "{size= 42}{b}In collaboration with subject:{/b} Data Structures & Algorithm \nInstructor: Rov Japheth G. Oracion{/size}{/i}" at truecenter with dissolve
+  File "renpy/display/render.pyx", line 487, in renpy.display.render.render_screen
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 313, in renpy.display.render.render_for_size
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 313, in renpy.display.render.render_for_size
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+Exception: '/i' closes a text tag that isn't open.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "renpy/display/render.pyx", line 487, in renpy.display.render.render_screen
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 313, in renpy.display.render.render_for_size
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 313, in renpy.display.render.render_for_size
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+Exception: '/i' closes a text tag that isn't open.
+
+-- Full Traceback ------------------------------------------------------------
+
+Traceback (most recent call last):
+  File "renpy/common/00start.rpy", line 317, in script call
+    call expression "before_main_menu"
+  File "game/script.rpy", line 42, in script
+    show text "{size= 42}{b}In collaboration with subject:{/b} Data Structures & Algorithm \nInstructor: Rov Japheth G. Oracion{/size}{/i}" at truecenter with dissolve
+  File "renpy/ast.py", line 1581, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/exports/statementexports.py", line 260, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/core.py", line 1579, in do_with
+    return self.interact(
+           ~~~~~~~~~~~~~^
+        trans_pause=True, suppress_overlay=not renpy.config.overlay_during_with, mouse="with", clear=clear
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "renpy/display/core.py", line 2219, in interact
+    repeat, rv = self.interact_core(
+                 ~~~~~~~~~~~~~~~~~~^
+        preloads=preloads,
+        ^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )  # type: ignore
+    ^                
+  File "renpy/display/core.py", line 2890, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/core.py", line 1380, in draw_screen
+    surftree = renpy.display.render.render_screen(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        root_widget,
+        ^^^^^^^^^^^^
+        renpy.config.screen_width,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        renpy.config.screen_height,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "renpy/display/render.pyx", line 487, in renpy.display.render.render_screen
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/layout.py", line 899, in render
+    surf = render(child, width, height, cst, cat)
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/transition.py", line 375, in render
+    top = render(self.new_widget, width, height, st, at)
+          ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/layout.py", line 899, in render
+    surf = render(child, width, height, cst, cat)
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/layout.py", line 899, in render
+    surf = render(child, width, height, cst, cat)
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/transform.py", line 1090, in render
+    return RenderTransform(self).render(width, height, st, at)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/accelerator.pyx", line 1021, in renpy.display.accelerator.RenderTransform.render
+  File "renpy/display/accelerator.pyx", line 440, in renpy.display.accelerator.RenderTransform.render_child
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/image.py", line 532, in render
+    return wrap_render(self.target, width, height, st, at)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/image.py", line 307, in wrap_render
+    rend = render(child, w, h, st, at)
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/text/text.py", line 2730, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+                     ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/text/text.py", line 799, in __init__
+    self.paragraphs = self.segment(text.tokens, style, renders, text)
+                      ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/text/text.py", line 1337, in segment
+    raise Exception("%r closes a text tag that isn't open." % text)
+Exception: '/i' closes a text tag that isn't open.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "renpy/common/00start.rpy", line 282, in script
+    python:
+  File "renpy/ast.py", line 1187, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/python.py", line 1260, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/common/00start.rpy", line 286, in <module>
+    renpy.call_in_new_context("_main_menu")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "renpy/game.py", line 372, in call_in_new_context
+    return renpy.execution.run_context(False)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "renpy/execution.py", line 1022, in run_context
+    context.run()
+    ~~~~~~~~~~~^^
+  File "renpy/common/00start.rpy", line 317, in script call
+    call expression "before_main_menu"
+  File "game/script.rpy", line 42, in script
+    show text "{size= 42}{b}In collaboration with subject:{/b} Data Structures & Algorithm \nInstructor: Rov Japheth G. Oracion{/size}{/i}" at truecenter with dissolve
+  File "renpy/common/00start.rpy", line 317, in script call
+    call expression "before_main_menu"
+  File "game/script.rpy", line 42, in script
+    show text "{size= 42}{b}In collaboration with subject:{/b} Data Structures & Algorithm \nInstructor: Rov Japheth G. Oracion{/size}{/i}" at truecenter with dissolve
+  File "renpy/display/error.py", line 135, in report_exception
+    renpy.game.invoke_in_new_context(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        call_exception_screen,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        ignore_action=ignore_action,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "renpy/game.py", line 301, in invoke_in_new_context
+    return callable(*args, **kwargs)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "renpy/display/error.py", line 44, in call_exception_screen
+    return renpy.ui.interact(mouse="screen", type="screen", suppress_overlay=True, suppress_underlay=True)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/ui.py", line 304, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/core.py", line 2219, in interact
+    repeat, rv = self.interact_core(
+                 ~~~~~~~~~~~~~~~~~~^
+        preloads=preloads,
+        ^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )  # type: ignore
+    ^                
+  File "renpy/display/core.py", line 2890, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/core.py", line 1380, in draw_screen
+    surftree = renpy.display.render.render_screen(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        root_widget,
+        ^^^^^^^^^^^^
+        renpy.config.screen_width,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        renpy.config.screen_height,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "renpy/display/render.pyx", line 487, in renpy.display.render.render_screen
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/layout.py", line 899, in render
+    surf = render(child, width, height, cst, cat)
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/layout.py", line 899, in render
+    surf = render(child, width, height, cst, cat)
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/layout.py", line 899, in render
+    surf = render(child, width, height, cst, cat)
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/screen.py", line 767, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/layout.py", line 899, in render
+    surf = render(child, width, height, cst, cat)
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/layout.py", line 1442, in render
+    surf = render(child, width - cxmargin - cxpadding, height - cymargin - cypadding, st, at)
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/layout.py", line 1953, in render
+    cwidth, cheight = sizeit("c", width, height, 0, 0)
+                      ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/layout.py", line 1950, in sizeit
+    rend = renpy.display.render.render_for_size(pos_d[pos], width, height, st, at)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 313, in renpy.display.render.render_for_size
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/layout.py", line 1953, in render
+    cwidth, cheight = sizeit("c", width, height, 0, 0)
+                      ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/layout.py", line 1950, in sizeit
+    rend = renpy.display.render.render_for_size(pos_d[pos], width, height, st, at)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 313, in renpy.display.render.render_for_size
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/viewport.py", line 283, in render
+    surf = renpy.display.render.render(self.child, child_width, child_height, st, at)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/layout.py", line 1162, in render
+    surf = render(d, width - x, rh, cst, cat)
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/text/text.py", line 2730, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+                     ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/text/text.py", line 799, in __init__
+    self.paragraphs = self.segment(text.tokens, style, renders, text)
+                      ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/text/text.py", line 1337, in segment
+    raise Exception("%r closes a text tag that isn't open." % text)
+Exception: '/i' closes a text tag that isn't open.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "renpy/bootstrap.py", line 376, in bootstrap
+    renpy.main.main()
+    ~~~~~~~~~~~~~~~^^
+  File "renpy/main.py", line 614, in main
+    run(restart)
+    ~~~^^^^^^^^^
+  File "renpy/main.py", line 137, in run
+    renpy.execution.run_context(True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "renpy/execution.py", line 1022, in run_context
+    context.run()
+    ~~~~~~~~~~~^^
+  File "renpy/common/00start.rpy", line 282, in script
+    python:
+  File "renpy/common/00start.rpy", line 282, in script
+    python:
+  File "renpy/display/error.py", line 135, in report_exception
+    renpy.game.invoke_in_new_context(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        call_exception_screen,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        ignore_action=ignore_action,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "renpy/game.py", line 301, in invoke_in_new_context
+    return callable(*args, **kwargs)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "renpy/display/error.py", line 44, in call_exception_screen
+    return renpy.ui.interact(mouse="screen", type="screen", suppress_overlay=True, suppress_underlay=True)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/ui.py", line 304, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/core.py", line 2219, in interact
+    repeat, rv = self.interact_core(
+                 ~~~~~~~~~~~~~~~~~~^
+        preloads=preloads,
+        ^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )  # type: ignore
+    ^                
+  File "renpy/display/core.py", line 2890, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/core.py", line 1380, in draw_screen
+    surftree = renpy.display.render.render_screen(
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        root_widget,
+        ^^^^^^^^^^^^
+        renpy.config.screen_width,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        renpy.config.screen_height,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "renpy/display/render.pyx", line 487, in renpy.display.render.render_screen
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/layout.py", line 899, in render
+    surf = render(child, width, height, cst, cat)
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/layout.py", line 899, in render
+    surf = render(child, width, height, cst, cat)
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/layout.py", line 899, in render
+    surf = render(child, width, height, cst, cat)
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/screen.py", line 767, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/layout.py", line 899, in render
+    surf = render(child, width, height, cst, cat)
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/layout.py", line 1442, in render
+    surf = render(child, width - cxmargin - cxpadding, height - cymargin - cypadding, st, at)
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/layout.py", line 1953, in render
+    cwidth, cheight = sizeit("c", width, height, 0, 0)
+                      ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/layout.py", line 1950, in sizeit
+    rend = renpy.display.render.render_for_size(pos_d[pos], width, height, st, at)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 313, in renpy.display.render.render_for_size
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/layout.py", line 1953, in render
+    cwidth, cheight = sizeit("c", width, height, 0, 0)
+                      ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/layout.py", line 1950, in sizeit
+    rend = renpy.display.render.render_for_size(pos_d[pos], width, height, st, at)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 313, in renpy.display.render.render_for_size
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/viewport.py", line 283, in render
+    surf = renpy.display.render.render(self.child, child_width, child_height, st, at)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/display/layout.py", line 1162, in render
+    surf = render(d, width - x, rh, cst, cat)
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/render.pyx", line 170, in renpy.display.render.render
+  File "renpy/display/render.pyx", line 260, in renpy.display.render.render
+  File "renpy/text/text.py", line 2730, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+                     ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/text/text.py", line 799, in __init__
+    self.paragraphs = self.segment(text.tokens, style, renders, text)
+                      ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/text/text.py", line 1337, in segment
+    raise Exception("%r closes a text tag that isn't open." % text)
+Exception: '/i' closes a text tag that isn't open.
+
+Windows-11-10.0.26200-SP0 AMD64
+Ren'Py 8.4.1.25072401
+Whispers n' Whiskey 0.1
+Fri Dec  5 16:17:20 2025
