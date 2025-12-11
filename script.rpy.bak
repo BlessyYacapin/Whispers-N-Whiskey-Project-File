@@ -1,0 +1,722 @@
+###################### CHARACTERS ######################
+define m = Character("Mom", color="#ffffff")
+define unknown_d = Character ("???", color="#ffffff")
+define d = Character("Diego", color="#ffffff")
+########################################################
+
+######################## IMAGES ########################
+image hospital:
+    "hospital.jpg"
+    zoom 1.7
+image forest:
+    "forest.png"
+image bar_inside:
+    "bar_inside.png"
+image bar_counter:
+    "bar_counter.png"
+########################################################
+
+################### GAME STARTS HERE ###################
+label start:
+
+    ###################### OPENING #####################
+    "{i}Beep... beep...{/i}" # Insert audio
+
+    # Mother coughs (Audio insert)
+    
+    scene hospital # Hospital BG : Temporary
+    
+    "Ma..."
+
+    m "Nak...you already know I dont have much time."
+
+    "Ma, don't say that! I will find a job, buy you medicines that you need." 
+    "Just don't leave me... not yet..."
+
+    m "{i}*chuckles*{/i}"
+    m "Promise me one thing, nak"
+
+    "Stop... you're acting like you're gonna leave me. I don't like it--"
+
+    # Mom held hand tighter : Insert Image at center (Slightly darken bg) :
+
+    m "Promise me you'll take care of yourself even when I'm gone." 
+    m "Help people and continue being kind to everyone"
+
+    "Ma---"
+
+    m "Promise me."
+    
+    # Choice pt.1
+    menu:
+
+        "... I promise":
+            jump choice1_yes
+
+        "Okay...":
+            jump choice1_yes
+
+    label choice1_yes:
+
+        $ menu_flag = True
+        
+        m "That's good to hear"
+
+        jump choice1_done
+
+    label choice1_done:
+        # ... The game continues here.
+    
+    # Paper and pendant on hand : Insert Image at center (Slightly darken bg) :
+
+    "What's this?"
+
+    m "Go to that address around that specific time. I'm sure he'll help you out."
+
+    "He? Who's {i}he?{/i}"
+
+    m "{b}Senior Diego{/b}. He'll help you find a job..."
+
+    "Ma, I don't understand---"
+
+    #Beeping Noises going faster (insert Audio)
+
+    "Ma? Ma! Nurse! Help!"
+
+    scene black # Fade into black : Flatline (insert audio) :
+
+    ################## SCENE TRANSITION ##################
+    show text "{i}On the way to the bar{/i}" at truecenter
+    pause 3
+    hide text
+    ######################################################
+
+    # Stepping on leaves noises (insert Audio)
+
+    "Is this really the right way? The rela refused to go further than this."
+    # Sighs (insert Audio)
+    "My last 150 pesos..."
+    "...all gone."
+    "..."
+    "It's been days since mama died... I miss her already.."
+
+    "{i}You continued walking{/i}"
+
+    "Music?"
+    "Where is it coming from?"
+
+    # Choice pt.2
+    menu:
+
+        "Find where it is coming from":
+            jump find_music
+
+        "Ignore and leave":
+            jump ignore_music
+
+    # Choice pt.2.1
+    label find_music:
+
+        "{i}You see a sign that says: {b}'This way to Sesión del Barrio'{/b}{/i}"
+        # Insert signage : Insert Image at center :
+        # Player look at the paper and pendant on hand : Insert Image at center :
+
+        scene forest
+
+        "Guess I'm going the right way... but why is it coming from the middle of the forest?"
+        "{i}You walked deeper into the forest{/i}"
+        "What did my Ma say about going to these kind of places again? I'm pretty sure you need to say something--- ah, right."
+        "Tabi tabi po..."
+        "{i}The wind stops. The music can be heard clearly again{/i}"
+
+        # Insert photo of a door (middle of the forest)
+        "A door...?"
+
+        # Choice pt.3
+        menu:
+            "Open the door":
+                jump open_door
+
+        label open_door:
+            scene black
+            "{i}I could feel the cold air greeting my body despite of the jacket im wearing.{/i}"
+            "{i}I try to adjust my sight because of the light--- I couldnt help but feel chills running though my spine as I look around.{/i}"
+            "{i}The atmosphere was eerie but comforting in ways I could not explain{/i}"
+
+            ############################# SCENE TRANSITION #############################
+            show text "{i}{b}Sesión del Barrio\nNovember 1, 20XX :: 12MN{/b}{/i}" at truecenter
+            pause 3
+            hide text
+            ############################################################################
+            
+            scene bar_inside
+
+            "Is this place a... bar?"
+
+            unknown_d "Who goes there?"
+
+            "{i}I froze, composing myself before I turned around to see who's voice was it from {/i}"
+
+            "Good evening... I was told to come here..."
+            "{i}I said as I showed him the piece of paper my Mama gave along with the pendant{/i}"
+            "{i}He inspects the paper and the pendant carefully, brows furrowed in confusion.{/i}"
+
+            unknown_d "Very well. May I ask for you name?"
+
+            $ player_name = renpy.input("Enter name: ", length = 25)
+            $ player_name = player_name.strip()
+            if player_name == "":
+                $ player_name = "Alex"
+            
+            ################ PLAYER ################
+            define p = Character ("[player_name]", color="#ffffff")
+            ########################################
+
+            p "My name is [player_name] Gonzales..."
+
+            unknown_d "{i}He raised his brow{/i}"
+            unknown_d "Gonzales? By any chance, are you related to Theresa Gonzales?"
+
+            p "{i}I nodded my head{/i}"
+            p "She's my mother, the one who told me to go here..."
+            p "She told me this place can help me get a job..."
+
+            d "I see... "
+            d "Well then, I am Diego Concepcion, the owner of {i}Sesión del Barrio{/i}."
+            d "They call me Senior Diego."
+            d "Your mother, Theresa Gonzales, used to work here for me as a bartender"
+
+            p "{i}Senior Diego handed me back the paper and pendant{/i}"
+
+            d "Keep that pendant with you at all times, it'll keep you safe for a while."
+            d "Make sure to not let it break"
+
+            p "{i}I reluctantly nod my head in response{/i}"
+
+            d "Follow me, I'll show you your room upstairs."
+            d  "For now, rest. Your training starts tomorrow."
+
+            jump DAY_1    #Temp...
+
+    # Choice pt.2.2
+    label ignore_music:
+
+        "Y'know what? I'll just go. It's too scary out here."
+
+        #sound of footsteps, then stops
+
+        "Right, can't go back."
+        "I dont know where the way back is, it's too dark."
+        
+        #sigh
+
+        "Guess I dont have any other choice."
+
+        jump find_music
+
+
+####################### DAY 1 ########################
+    label DAY_1:
+        scene black
+
+        ############################# SCENE TRANSITION #############################
+        show text "{i}{b}DAY 1{/b}{/i}" at truecenter
+        pause 3
+        hide text
+        ############################################################################
+        
+        scene bar_counter
+
+        d "Had a good sleep?"
+        
+        menu:
+            "Yes!":
+                jump tutorial
+
+        ################ IMAGES ################
+        image cup_empty = "cup_empty.png"
+        image cup_1 = "cup_1.png"
+        image cup_2 = "cup_2.png"
+        image cup_3 = "cup_3.png"
+        ########################################
+
+        ########### SCREENS ###########
+            
+        ######### GIN #########
+        screen gin_button:
+                
+            add "cup_empty" xpos 0.43 ypos 0.25 zoom 0.75
+
+            $ tip = GetTooltip()
+            if tip:
+                text tip xcenter 0.7 ypos 90 size 40 font "Belgan Aesthetic.ttf" color "#ffffff"
+                
+            imagebutton:
+                xanchor 0.5
+                yanchor 0.5
+                xpos 0.7
+                ypos 0.5
+    
+                tooltip "Gin"
+                auto "gin_%s.png" #covers idle, hover, selected etc
+                action [Hide("gin_button"), Return("gin_done")]
+
+        ######### HONEY #########
+        screen honey_button(zorder=10):
+            add "cup_1" xpos 0.43 ypos 0.25 zoom 0.75
+
+            $ tip = GetTooltip()
+                
+            if tip:
+                text tip xcenter 0.7 ypos 470 size 40 font "Belgan Aesthetic.ttf" color "#ffffff"
+            imagebutton:
+                xanchor 0.5
+                yanchor 0.5
+                xpos 0.7
+                ypos 0.6
+
+                tooltip "Honey"
+                auto "honey_%s.png" #covers idle, hover, selected etc
+                action [Hide("honey_button"), Return("honey_done")]
+
+        ######### LIME #########
+        screen lime_button:
+            add "cup_2" xpos 0.43 ypos 0.25 zoom 0.75
+
+            $ tip = GetTooltip()
+            if tip:
+                text tip xcenter 0.76 ypos 580 size 40 font "Belgan Aesthetic.ttf" color "#ffffff"
+            imagebutton:
+                xanchor 0.5
+                yanchor 0.5
+                xpos 0.7
+                ypos 0.7
+
+                tooltip "Lime"
+                auto "lime_%s.png" #covers idle, hover, selected etc
+                action [Hide("lime_button"), Return("lime_done")]
+
+        ############# SERVE #############
+        screen serve_button:
+            add "cup_3" xpos 0.43 ypos 0.25 zoom 0.75
+    
+            imagebutton:
+                xanchor 0.5
+                yanchor 0.5
+                xpos 0.7
+                ypos 0.5
+                auto "serve_button_%s.png" #covers idle, hover, selected etc
+                action [Hide("serve_button"), Return("serve_done")]
+
+        ######### DAY 1 TUTORIAL START #########
+        label tutorial:
+            d "Good, good"
+            d "Well then, let us begin your training"
+
+            d "First, let's start simple"
+            d "Click the gin bottle on the counter"
+
+            window hide
+            $ result = renpy.call_screen("gin_button")
+            if result == "gin_done":
+                show cup_1:
+                    xpos 0.43
+                    ypos 0.25
+                    zoom 0.75
+                window show
+                d "Good. You poured the gin nicely"
+                
+            d "Next, let's add some sweetness. Click the honey."
+
+            window hide
+            $ result = renpy.call_screen("honey_button")
+            hide cup_1
+            if result == "honey_done":
+                show cup_2:
+                    xpos 0.43
+                    ypos 0.25
+                    zoom 0.75
+                window show
+                d "Perfect. Now the mixture looks smoother."
+
+            d "Now, for a little bit of tang—add the lime."
+
+            window hide
+            $ result = renpy.call_screen("lime_button")
+            hide cup_2
+            if result == "lime_done":
+                show cup_3:
+                    xpos 0.43
+                    ypos 0.25
+                    zoom 0.75
+                window show
+                d "Nicely done! Almost there."
+
+            d "Finally, click the serve button to finish your first drink."
+
+            window hide
+            $ result = renpy.call_screen("serve_button")
+            hide cup_3
+            if result == "serve_done":
+                jump end_tutorial
+        
+        label end_tutorial:
+            show cup_3:
+                xpos 0.43
+                ypos 0.25
+                zoom 0.75
+
+            d "Great! You have made a drink"
+            d "But now, it's time to test the trust system"
+
+            jump trust_system_test
+
+    label trust_system_test:
+        #-------------------- DEFAULT VALUES --------------------
+        default diego_trust = 3
+        default ysabel_trust = 3
+        default current_character = "Diego"  # To control which trust bar appears
+
+        #-------------------- IMAGES --------------------
+        image bg black = Solid("#000")
+        image heart_full = "images/heart_full.png"
+        image heart_empty = "images/heart_empty.png"
+        image jumpscare = "images/jumpscare.png"
+        image jumpscare2 = "images/2_jumpscare.png"
+
+        # DIEGO SPRITES
+        image diego sweat = "images/sprite_sweat.png"
+        image diego annoyed = "images/sprite_annoyed.png"
+        image diego annoyed2 = "images/sprite_annoyed2.png"
+        image diego smile = "images/sprite_smile.png"
+        image diego smug = "images/sprite_smug.png"
+        image diego shocked = "images/sprite_shocked.png"
+
+        # YSABEL SPRITES (sample placeholders)
+        image ysabel neutral = "images/ysabel_neutral.png"
+        image ysabel smile = "images/ysabel_smug.png"
+        image ysabel annoyed = "images/ysabel_annoyed.png"
+        image ysabel shocked = "images/ysabel_angry.png"
+
+        #-------------------- CHARACTERS --------------------
+        define y = Character("Ysabel", color="#ffffff")
+
+        #-------------------- SCREENS --------------------
+        screen trust_display():
+            hbox:
+                xalign 0.97
+                yalign 0.05
+                spacing 5
+
+                if current_character == "Diego":
+                    $ trust_val = diego_trust
+                else:
+                    $ trust_val = ysabel_trust
+
+                for i in range(3):
+                    if i < trust_val:
+                        add "heart_full" zoom 0.4
+                    else:
+                        add "heart_empty" zoom 0.4
+
+
+        screen status_menu_day1():
+            tag menu
+            modal True
+            frame:
+                xalign 0.5
+                yalign 0.5
+                padding (40, 40)
+                vbox:
+                    spacing 15
+                    text "Trust Status Summary" size 40
+                    text "Diego Trust: [diego_trust]/3"
+                    textbutton "Return" action [Hide("status_menu_day1"), Return()]
+    
+        screen status_menu_day2():
+            tag menu
+            modal True
+            frame:
+                xalign 0.5
+                yalign 0.5
+                padding (40, 40)
+                vbox:
+                    spacing 15
+                    text "Trust Status Summary" size 40
+                    text "Diego Trust: [diego_trust]/3"
+                    text "Ysabel Trust: [ysabel_trust]/3"
+                    textbutton "Return" action [Hide("status_menu_day2"), Return()]
+
+        #============================================================
+        # MAIN STORY (DAY 1 - DIEGO)
+        #============================================================
+
+        label start_day1:
+            scene bg black
+            $ current_character = "Diego"
+            show screen trust_display
+            show diego sweat at center
+
+            d "Oh look! I have a...temporary body???"
+            d "Nevermind."
+            
+            "You sit across from Diego. The flicker of neon light cuts across his expression."
+    
+            d "So, you really came back after everything that happened?"
+
+        #-------------------- ROUND 1 --------------------
+        menu:
+            "Smile calmly.":
+                $ diego_trust += 0
+                show diego smile
+                d "Still trying to keep it cool, huh? The tension eases just a bit."
+
+            "Stay silent.":
+                $ diego_trust -= 1
+                show diego annoyed
+                d "Silent again? I should've known better."
+
+        #-------------------- ROUND 2 --------------------
+        show diego sweat
+        d "I heard you’ve been talking to the others behind my back. Is that true?"
+
+        menu:
+            "No, I was defending you.":
+                $ diego_trust += 0
+                show diego smug
+                d "Hmph… defending me, huh? I’ll believe you—for now."
+
+            "I didn’t say anything. But maybe I should have.":
+                $ diego_trust -= 1
+                show diego shocked
+                d "So you admit it. You always betray me when it counts."
+
+        #-------------------- ROUND 3 --------------------
+        show diego annoyed
+        d "You remember the night at the warehouse? When everything went wrong?"
+
+        menu:
+            "I did what I had to do.":
+                $ diego_trust += 0
+                show diego smug
+                d "Cold as always… but maybe you’re right."
+
+            "That wasn’t my fault!":
+                $ diego_trust -= 1
+                show diego annoyed2
+                d "You never take responsibility."
+
+        #-------------------- ROUND 4 --------------------
+        show diego sweat
+        d "Last question... be honest with me. Did you ever trust me at all?"
+
+        menu:
+            "Always. Even now.":
+                $ diego_trust += 0
+                show diego smile
+                d "Heh… maybe there’s hope for us after all."
+                call check_diego_trust
+
+            "No. I never did.":
+                $ diego_trust -= 1
+                show diego shocked
+                d "Then this is where it ends."
+                call check_diego_trust
+
+        "The day ends with tension still hanging in the air..."
+        call screen status_menu_day1
+        jump day2
+    
+        #============================================================
+        # DAY 2 - YSABEL
+        #============================================================
+
+        label day2:
+            $ current_character = "Ysabel"
+            $ ysabel_trust = 3
+            scene bg black
+            show ysabel neutral at center
+            show screen trust_display
+
+            "{i}The next morning, you meet Ysabel in the courtyard. A fresh start... but new tension.{/i}"
+
+        #-------------------- ROUND 1 --------------------
+        y "Hmmm... I don't look like myself... Oh well this works"
+        y "You look tired. Did you and Diego argue again?"
+        
+        menu:
+            "He just doesn’t listen.":
+                $ ysabel_trust -= 1
+                show ysabel annoyed
+                y "Then maybe you should start listening too."
+
+            "We talked. It went... okay.":
+                $ ysabel_trust += 0
+                show ysabel smile
+                y "That’s good. I hope things settle down soon."
+
+        #-------------------- ROUND 2 --------------------
+        y "You’ve been quiet lately. Are you hiding something from me?"
+        
+        menu:
+            "No, I promise.":
+                $ ysabel_trust += 0
+                show ysabel smile
+                y "Hmm... I’ll take your word for it."
+
+            "What if I am?":
+                $ ysabel_trust -= 1
+                show ysabel shocked
+                y "That’s not funny. I need honesty."
+
+        #-------------------- ROUND 3 --------------------
+        y "People say you’ve been distant. Are you losing faith in us?"
+        menu:
+            "Of course not. You’re the only one I trust.":
+                $ ysabel_trust += 0
+                show ysabel smile
+                y "You’re saying that just to calm me down, huh?"
+
+            "Maybe I am. Everything feels unstable.":
+                $ ysabel_trust -= 1
+                show ysabel annoyed
+                y "Then maybe you should decide what you really want."
+
+        #-------------------- ROUND 4 --------------------
+        y "One last thing. If it came down to choosing between Diego and me... who would you stand by?"
+        menu:
+            "I’d stand by you.":
+                $ ysabel_trust += 0
+                show ysabel smile
+                y "You always know what to say... even if I don’t believe it fully."
+                call check_ysabel_trust
+
+            "I can’t choose.":
+                $ ysabel_trust -= 1
+                show ysabel shocked
+                y "Then maybe neither of us can trust you."
+                call check_ysabel_trust
+        call screen status_menu_day2
+
+        jump end
+
+        #============================================================
+        # CHECK SYSTEMS
+        #============================================================
+
+        label check_diego_trust:
+            if diego_trust <= 0:
+                jump game_over_diego
+            elif diego_trust == 1:
+                jump diego_glitch
+            elif diego_trust == 2:
+                d "You’re walking on thin ice."
+            else:
+                d "I guess... I still trust you."
+            return
+
+        label check_ysabel_trust:
+            if ysabel_trust <= 0:
+                show ysabel shocked
+                y "I can’t do this anymore!"
+                jump game_over_ysabel
+            elif ysabel_trust == 1:
+                jump ysabel_glitch
+            elif ysabel_trust == 2:
+                show ysabel neutral
+                y "Hmm... I’ll give you a chance."
+            else:
+                show ysabel smile
+                y "I knew I could count on you."
+            return
+
+        #============================================================
+        # GLITCH LABEL
+        #============================================================
+
+        label diego_glitch:
+            image diego glitched:
+                glitch("diego shocked", offset=20)
+                pause 0.1
+                glitch("diego shocked", offset=20, chroma=True)
+                pause 0.1
+                glitch("diego shocked", offset=20)
+                pause 0.1
+                glitch("diego shocked", offset=20, chroma=True)
+                pause 0.1
+                glitch("diego shocked", offset=20)
+                pause 0.1
+                glitch("diego shocked", offset=20, chroma=True)
+                pause 0.5
+                repeat
+
+            show diego glitched with hpunch
+            d "You’re lucky I’m still talking to you."
+            hide diego glitched
+            return
+
+        label ysabel_glitch:
+            image ysabel glitched:
+                glitch("ysabel annoyed", offset=20)
+                pause 0.1
+                glitch("ysabel annoyed", offset=20, chroma=True)
+                pause 0.1
+                glitch("ysabel annoyed", offset=20)
+                pause 0.1
+                glitch("ysabel annoyed", offset=20, chroma=True)
+                pause 0.1
+                glitch("ysabel annoyed", offset=20)
+                pause 0.1
+                glitch("ysabel annoyed", offset=20, chroma=True)
+                pause 0.5
+                repeat
+
+            show ysabel glitched with hpunch
+            y "You’re testing my patience."
+            hide ysabel glitched
+            return
+
+        #============================================================
+        # STATUS MENU AND ENDING
+        #============================================================
+
+        label ending:
+            hide screen trust_display
+            "As the sun sets, you reflect on your connections..."
+
+            call screen status_menu
+
+            "Your choices with Diego and Ysabel will decide the outcome."
+
+            if diego_trust >= 2 and ysabel_trust >= 2:
+                "You’ve earned their trust. Together, you move forward."
+            elif diego_trust <= 1 and ysabel_trust <= 1:
+                "You’ve lost them both. The story ends in silence."
+            else:
+                "The future is uncertain... but there’s still hope."
+            jump end
+
+
+    # This ends the game.
+    label end:
+        return
+
+#============================================================
+# GAME OVER
+#============================================================
+
+label game_over_diego:
+    scene jumpscare
+    with vpunch
+    show text "{size=80}GAME OVER{/size}" at truecenter
+    pause 2.5
+    $ renpy.full_restart()
+    return
+
+label game_over_ysabel:
+    scene jumpscare2
+    with vpunch
+    show text "{size=80}GAME OVER{/size}" at truecenter
+    pause 2.5
+    $ renpy.full_restart()
+    return
